@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Degree Examination Grade Sheet</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: #f3f3f3;
+    }
+    .marksheet {
+      background: white;
+      width: 900px;
+      margin: 30px auto;
+      padding: 24px 40px 36px 40px;
+      border: 2px solid #b5b5b5;
+      box-shadow: 0 2px 8px #ccc;
+      position: relative;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .header .college {
+      color: #be7322;
+      font-weight: bold;
+      font-size: 1.35em;
+      letter-spacing: 1px;
+    }
+    .header .college-details {
+      color: #006a4e;
+      font-size: 1em;
+    }
+    hr {
+      margin: 10px 0 22px 0;
+      border: 0;
+      border-top: 2px solid #a6c3e2;
+    }
+    .marksheet-title {
+      text-align: center;
+      margin-bottom: 18px;
+      font-size: 1.22em;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: #205178;
+    }
+    .student-info {
+      width: 100%;
+      margin-bottom: 18px;
+      font-size: 1em;
+    }
+    .student-info td {
+      padding: 2px 6px;
+      vertical-align: top;
+    }
+    .student-info b {
+      font-weight: 600;
+    }
+    .table-section {
+      margin-top: 10px;
+    }
+    table.grade-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.99em;
+    }
+    table.grade-table th, table.grade-table td {
+      border: 1px solid #c3c3c3;
+      padding: 6px 6px;
+      text-align: center;
+    }
+    table.grade-table th {
+      background: #e3edf9;
+      color: #14395c;
+      font-size: 1em;
+    }
+    table.grade-table td {
+      background: #fffdf8;
+    }
+    .note {
+      font-size: 0.96em;
+      margin-top: 14px;
+    }
+    .summary-table {
+      margin-top: 20px;
+      width: 80%;
+      border-collapse: collapse;
+      font-size: 0.99em;
+    }
+    .summary-table th, .summary-table td {
+      border: 1px solid #d2d8dc;
+      padding: 4px 10px;
+    }
+    .footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .sig-block {
+      text-align: right;
+    }
+    .seal {
+      border-radius: 50%;
+      width: 110px;
+      border: 2px solid #d94;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 0.88em;
+      color: #b15d00;
+      display: inline-block;
+      padding: 12px;
+      font-weight: bold;
+    }
+    .date-place {
+      text-align: left;
+      font-size: 1em;
+    }
+    /* Print Styles */
+    @media print {
+      body {
+        background: none;
+      }
+      .marksheet {
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="marksheet">
+    <div class="header">
+      <table>
+        <td>
+      <img src="svce_logo.jpg" width="150" height="150">
+        </td>
+        <td>
+      <div class="college">SRI VENKATESWARA COLLEGE OF ENGINEERING</div>
+      <div class="college-details">
+      (An Autonomous Institution, Affiliated to Anna University, Chennai)<br>
+      Pennalur, Sriperumbudur Tk. 602117 (TN), India.
+    </div>
+        </td>
+      </table>
+    <hr>
+  </div>
+  <div class="marksheet-title">DEGREE EXAMINATION - GRADE SHEET</div>
+  
+  <table class="student-info">
+    <tr>
+      <td><b>Register Number:</b> 226402106301</td>
+      <td><b>UNIS No.:</b> 2302112170412096</td>
+      <td><b>Date of Publication:</b> 09/07/2024</td>
+    </tr>
+    <tr>
+      <td><b>Name of Student:</b> ABISHEKA PRIYAN V</td>
+      <td><b>Gender:</b> MALE</td>
+      <td><b>Regulation:</b> 2022</td>
+    </tr>
+    <tr>
+      <td><b>Date of Birth:</b> 18-12-2005</td>
+      <td><b>Month & Year of Exam:</b> MAY-24</td>
+      <td><b>Branch:</b> B.E. Computer Science and Engineering</td>
+    </tr>
+    <tr>
+      <td><b>Semester:</b> II</td>
+      <td><b>Year:</b> I</td>
+    </tr>
+  </table>
+  
+  <div class="table-section">
+    <table class="grade-table">
+      <tr>
+        <th>S.No.</th>
+        <th>Course Code</th>
+        <th>Name of the Course</th>
+        <th>Credit</th>
+        <th>Grade</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>01</td>
+        <td>CS2223</td>
+        <td>DIGITAL PRINCIPLES AND SYSTEM DESIGN</td>
+        <td>03</td>
+        <td>A</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>CS2221</td>
+        <td>OBJECT ORIENTED PROGRAMMING</td>
+        <td>03</td>
+        <td>A+</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td>HS2222</td>
+        <td>SCIENCE AND TECHNOLOGY IN ANCIENT TAMIL SOCIETY</td>
+        <td>02</td>
+        <td>B+</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>04</td>
+        <td>HS2221</td>
+        <td>TECHNICAL ENGLISH II</td>
+        <td>02</td>
+        <td>B+</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>05</td>
+        <td>MA2225</td>
+        <td>APPLIED MATHEMATICS II</td>
+        <td>04</td>
+        <td>A</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>06</td>
+        <td>GE2221</td>
+        <td>TECHNICAL DRAWING</td>
+        <td>02</td>
+        <td>B+</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>07</td>
+        <td>CS2212</td>
+        <td>DIGITAL PRINCIPLES AND SYSTEM DESIGN LABORATORY</td>
+        <td>01.5</td>
+        <td>A+</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>08</td>
+        <td>CS2211</td>
+        <td>OBJECT ORIENTED PROGRAMMING LABORATORY</td>
+        <td>01.5</td>
+        <td>A</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>09</td>
+        <td>CS2201</td>
+        <td>PYTHON FOR DATA SCIENCE</td>
+        <td>02</td>
+        <td>O</td>
+        <td>P</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="note"><b>*** End of Statement ***</b></div>
+  
+  <div>
+    <table class="summary-table">
+      <tr>
+        <th>Curriculum Semester</th>
+        <th>I</th>
+        <th>II</th>
+        <th>III</th>
+        <th>IV</th>
+        <th>V</th>
+        <th>VI</th>
+        <th>VII</th>
+        <th>VIII</th>
+      </tr>
+      <tr>
+        <td>Credits Registered</td>
+        <td>-</td>
+        <td>21</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Credits Earned</td>
+        <td>-</td>
+        <td>21</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Grade Point Earned</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Grade Point Average</td>
+        <td>-</td>
+        <td>7.45</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Cumulative Credits Earned</td>
+        <td>-</td>
+        <td>21</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Cumulative Grade Point Average</td>
+        <td>-</td>
+        <td>7.45</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="footer">
+    <div class="date-place">
+      Sriperumbudur Tk. 602117<br>
+      Date: 31/03/2025
+    </div>
+    <div class="sig-block">
+      <div class="seal">CONTROLLER OF EXAMINATIONS<br><span style="font-size:12px;">(SEAL)</span></div>
+      <br>
+      <b>CONTROLLER OF EXAMINATIONS</b>
+    </div>
+  </div>
+  <div style="margin-top:20px;font-size:0.89em;">This Grade sheet bears no conviction</div>
+</div>
+</body>
+</html>
